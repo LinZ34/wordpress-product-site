@@ -1,0 +1,337 @@
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+body{
+	padding:0;
+	margin:0;
+	background:#FFF;
+	position:relative;
+    font-family: 'Work Sans', sans-serif;
+    font-family:  '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+a:hover{
+	text-decoration:none;
+}
+/* header */
+.topheader{
+    z-index: 4;
+    position: fixed;
+    top: 40px; 
+    left: 0px;
+    right: 0px;
+    padding: 0 1.3vw;
+    transition: 0.3s cubic-bezier(0.26, 0.16, 0.1, 1);
+}
+.topheader.scrolled {
+    top: 0;
+    padding: 0;
+    transition: 0.3s cubic-bezier(0.26, 0.16, 0.1, 1);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.header-wrapper{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 14px 20px;
+}
+.header-wrapper.scrolled{
+    border-radius: 0px;
+}
+.header_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 3%;
+}
+.logo{
+    margin: 0 0 0 10px;
+}
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu_navlist{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0px;
+}
+.header_menu_listitem{
+    margin-right: 1.2vw;
+}
+.header_menu_btn{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.header_menu_btnitem:not(:last-child){
+    margin-right: 10px;
+}
+.a-button1 {
+    display: inline-block;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 2px 15px;
+    text-align: center;
+    transition: 0.4s all;
+}
+.a-button2 {
+    display: inline-block;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 2px 30px;
+    text-align: center;
+    transition: 0.4s all;
+    border: 1.5px solid transparent;
+}
+.logo img{
+    padding-top: 3px;
+}
+.text {	
+    text-transform: capitalize;
+    color: #102b72;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    line-height: 21px;
+    padding:0;
+    display: block;
+}
+.a-button1:hover{
+    background: #FFF;
+    color: #0087CE;
+    border: #0087CE 1.5px solid;
+}
+.a-button2:hover{
+    background: #FFF;
+    color: #102B72;
+    border: #102B72 1.5px solid;
+}
+.reason_text{
+    width: calc(60% - 115px);
+    margin-top: 0;
+}
+/* responsive design of menu part  */
+.header_menu_btn_wrapper{
+    display: none;
+}
+.header_menu_btn1{
+    display: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button li{
+    margin: 0 5px;
+}
+.header button{
+    height: 40px;
+}
+.navlist {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF;
+    flex-direction: column;
+    justify-content: center;
+    height: 0vh;
+    display: none;
+}
+.navlist_button {
+    padding: 0 2vw;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    height: 10.5vh;
+    line-height: 100%;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.navlist_button:last-child{
+    border-bottom:none;
+}
+.navlist_ul{
+    padding: 2vh 30px;
+}
+.navlist_button a {
+    text-decoration: none;
+    line-height: 10.5vh;
+    display: block;
+    position: relative;
+}
+.navlist_button a::after{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    bottom: 0;
+    display: block;
+    width: 20px;
+    height: 13px;
+    margin: auto;
+    content: "";
+    background-size: auto;
+    transition: all 0.3s;
+}
+.buttoninner{
+    display: none;
+}
+.navbar-toggler{
+    display: none;
+}
+#nav-icon3 {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    margin: 0 0 0 20px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3.5px;
+    width: 100%;
+    background: #102B72;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+  
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 10px;
+  }
+  
+#nav-icon3 span:nth-child(4) {
+    top: 20px;
+  }
+  
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+@media(max-width:1080px) {
+    .navlist.expanded {
+    box-shadow: 0px 20px 15px -10px rgba(84,92,96,.15) inset;
+    display: block;
+    height: 93vh;
+    margin: 20px -20px;
+    width: auto;
+    }
+    section.expanded{
+        display: none;
+    }
+    button:focus {
+        outline:none;
+    }
+    .logo{
+        order: 1;
+    }
+    .header_menu_btn_wrapper{
+        display: flex;
+        order: 2;
+    }
+    .header_menu_btn1{
+        display: flex;
+        margin: 0;
+        list-style: none;
+        align-items:center;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .header_menu{
+        display: none;
+    }
+    .buttoninner{
+        display: block;
+    }
+    .banner_w3lspvt{
+        min-height: 28em;
+    }
+    }
+    @media(max-width:768px) {
+        .header_menu_btn{
+            display: none;
+        }
+        .buttoninner{
+            display: block;
+        }
+        .header_menu_btn1{
+            display: none;
+        }
+}
+
+@media(max-width:568px) {
+    .navbar-toggler {
+        padding: 0.25rem 0rem;
+    }
+    .header_items {
+        padding: 0 5px;
+    }
+    .navlist_button a {
+        line-height: 12vh;
+    }
+    .navlist_button {
+        height: 12vh;
+        padding: 0 1vw 0 0;
+    }
+}

@@ -1,0 +1,195 @@
+.title {
+    position: absolute;
+    top: 12vw;
+    left: 10vw;
+  }
+.titlesm span{
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: #2E2E2E 1.5px solid;
+    font-weight: bold;
+  }
+.titlebg-sg{
+    font-size: 32px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-top: 10px;
+}
+.tbtitle{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #0087CE;
+    color: white;
+    border-radius: 20px;
+    display: block; 
+    margin: 30px auto;
+    width: 100px;
+}
+.download-container{
+    display: flex;
+    margin: 40px 8vw 80px;
+}
+.download-left{
+    width: 55%;
+    margin-right: 40px;
+}
+.download-right{
+    width: 45%;
+}
+.download-cover img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+}
+.download-smpic{
+    display: flex;
+    margin: 20px 0;
+}
+.download-smpic img{
+    width: 30%
+}
+.download-smpic img:nth-child(2){
+   margin: 0 5%;
+}
+.download-notice{
+    margin-top: 15px;
+}
+.download-privacy-title{
+    font-weight: bold;
+    color: #0087CE;
+    text-align: left;
+    margin: 10px 0;
+}
+.download-privacy-text{
+    color: #2E2E2E;
+    font-size: 15px;
+    line-height: 26px;
+}
+.download-privacy{
+    margin-bottom: 30px;
+}
+.download-pvlink{
+    color: #0087CE;
+}
+.download-pvlink:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: #102B72;
+    transition: all 0.5s;
+}
+.recommend{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2E2E2E;
+}
+.dwdlist{
+    margin-top: 15px;
+    padding: 0;
+}
+.dwdlist ul{
+    list-style: none;
+    padding: 0 0 10px;
+    border-bottom: 1.5px dashed #d7d7d7;
+}
+.dwdlist li{
+    color: #2E2E2E;
+    list-style: none;
+    position: relative;
+    margin: 8px 26px;
+}
+.dwdlist li::before{
+    position: absolute;
+    top: 4px;
+    left: -24px;
+    bottom: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-image: url(../images/pages/columntb.svg);
+    background-size: auto;
+}
+.back a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #2E2E2E;
+    border-bottom: #2E2E2E solid 2px;
+    padding-bottom: 4px;
+    transition: all 0.3s;
+}
+.back{
+    margin: 80px 8vw 0px;
+}
+.back a::before{
+    content: "";
+    background-image:url(../images/jump.svg);
+    background-size: 100% 100%; 
+    width: 16px; 
+    height: 10px;
+    margin-right: 3px;
+    display: inline-block;
+    transition: all 0.3s;
+    transform: scaleX(-1);
+}
+.back a:hover {
+    color: #0087CE;
+    cursor: pointer;
+    border-bottom: #0087CE solid 2px;
+}
+.back a:hover::before {
+    background-image: url(../images/jump_hover.svg); 
+    transform: scaleX(-1);
+}
+@media(max-width:1080px) {
+    .title {
+      top: 10vw;
+      left: 6vw;
+    }
+    .titlebg-sg {
+        font-size: 28px;
+    }
+}
+@media(max-width:920px) {
+    .title {
+      top: 8vw;
+    }
+    .header_items.expanded {
+        background-color: #f7f7f7;
+    }
+}
+@media(max-width:768px) {
+    .titlesm span{
+        display: none;
+      }
+    .title {
+    text-align: center;
+    left: auto; 
+    top: auto; 
+    margin: 0 20px;
+    }
+    .titlebg-sg {
+        font-size: 4vw;
+    }
+    .keyvisual {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        position: relative;
+      }    
+    .download-container{
+        display: block;
+    }
+    .download-left{
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 40px;
+    }
+    .download-right{
+        width: 100%;
+        margin-top:20px;
+    }
+}
+@media(max-width:568px) {
+}

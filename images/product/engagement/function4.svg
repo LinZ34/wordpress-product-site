@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="function4" transform="translate(-1060 -2464)">
+    <rect id="長方形_601" data-name="長方形 601" width="54" height="54" transform="translate(1060 2464)" fill="none"/>
+    <g id="グループ_2050" data-name="グループ 2050" transform="translate(-48.283 2051.363)">
+      <path id="パス_2047" data-name="パス 2047" d="M1125.708,451.51h-11.352a2.081,2.081,0,0,1-2.076-2.086v-30.7a2.081,2.081,0,0,1,2.076-2.086h41.805a2.081,2.081,0,0,1,2.076,2.086v15.35" fill="none" stroke="#e44468" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="線_54" data-name="線 54" x2="22.056" transform="translate(1112.28 462.637)" fill="none" stroke="#e44468" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <g id="グループ_2033" data-name="グループ 2033" transform="translate(1124.003 424.319)">
+        <path id="パス_2048" data-name="パス 2048" d="M1127.563,433.6l6.968-8.252,8.576,8.252" transform="translate(-1127.563 -425.348)" fill="none" stroke="#e44468" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="線_55" data-name="線 55" y1="8.252" x2="6.968" transform="translate(15.543)" fill="none" stroke="#e44468" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <circle id="楕円形_38" data-name="楕円形 38" cx="9.963" cy="9.963" r="9.963" transform="translate(1135.259 437.942)" fill="none" stroke="#e44468" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="線_56" data-name="線 56" x2="6.196" y2="6.196" transform="translate(1152.087 456.441)" fill="none" stroke="#e44468" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

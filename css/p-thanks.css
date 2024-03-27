@@ -1,0 +1,167 @@
+.keyvisual {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+}  
+.title {
+  position: absolute;
+  text-align: center;
+  left: auto; 
+  top: auto; 
+}
+.titlesm{
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2E2E2E;
+}
+.titlebg{
+  font-size: 40px;
+  font-weight: 600;
+  color: #2E2E2E;
+  margin-top: 10px;
+}
+.titlesm span{
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: #2E2E2E 1.5px solid;
+  font-weight: bold;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 20vw 40px;
+}
+.text{
+  width: 65%;
+}
+.text h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #0087CE;
+}
+.text p{
+  margin-top: 20px;
+  font-size: 18px;
+}
+.img{
+  width: 35%;
+  margin-left: 10px;
+}
+.img img{
+  width: 100%;
+  margin-left: 20px;
+}
+.buttons{
+  display: flex;
+  margin: 0 18vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons a{
+  display: inline-block;
+  border: #2e2e2e solid 1.5px;
+  border-radius: 99px;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 260px;
+}
+.buttons a:hover {
+  background: #0087CE;
+  color: #FFF;
+  border: #0087CE solid 1.5px;
+}
+@media(max-width:1220px){
+  .content {
+    margin: 80px 15vw 40px;
+}
+}
+@media(max-width:1080px) {
+    .titlebg{
+      font-size: 34px;
+    }
+    .titlesm{
+      font-size: 18px;
+    }
+    .buttons {
+      display: flex;
+      margin: 0 0;
+    }
+    .content {
+      margin: 80px 7vw 40px;
+  }
+}
+@media(max-width:920px) {
+  .titlesm {
+    margin-top: 10px;
+  }
+  .text h1 {
+    font-size: 20px;
+  }
+  .text p {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .content {
+    margin: 80px 7vw 40px;
+}
+}
+@media(max-width:768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 7vw;
+  }
+  .img {
+    width: 50%;
+    margin: 30px auto;
+    order: -1;
+  }
+  .img img {
+    margin: 0 auto;
+  }
+  .text {
+    width: 100%;
+  }
+  .titlebg {
+    font-size: 28px;
+  }
+  .text h1 {
+    text-align: center;
+  }
+  .text p {
+    text-align: center;
+  }
+}
+@media(max-width:568px) {
+  .text h1 {
+    font-size: 18px;
+  }
+  .titlebg {
+    font-size: 24px;
+}
+  .titlesm {
+    display: none;
+  }
+  .buttons {
+    display: block;
+    margin: 0 0;
+  }
+  .buttons a {
+    display: block;
+    margin: 40px auto;
+  }
+}
+@media(max-width:440px) {
+  .buttons a {
+    width: 240px;
+}
+}

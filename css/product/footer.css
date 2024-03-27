@@ -1,0 +1,113 @@
+.footer{
+    background-color: #0c0c0c;
+    height: auto;
+    padding: 60px 0 20px;
+}
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+.footer_navlist{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    justify-content: center; 
+}
+.footer_menu_listitem a{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    line-height: 21px;
+    padding: 30px 0 0 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.footer_menu_listitem{
+    margin-right: 40px;
+}
+.company_pmark img{
+    width: 70px;
+}
+.company_pmark{
+    display: flex;
+    align-items: center; 
+    width: 35%; 
+    margin: 0 auto; 
+    padding-top: 35px;
+}
+.ft_company{
+    text-align: left;
+    flex-grow: 1; 
+}
+.ft_company h3{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ft_company p{
+    padding-top: 10px;
+    color: #FFF;
+    font-size: 16px;
+}
+.footer_line {
+    content: "";
+    display: block;
+    height: 1px; 
+    width: 62vw; 
+    background-color: #5a5a5a; 
+    margin: 20px auto; 
+}
+.footer_menu_listitem a:hover {
+    color: #60c7ff;
+    cursor: pointer;
+}
+.copyright{
+    color: #fff;
+    font-size: 12px;
+}
+@media(max-width:1080px) {
+.company_pmark {
+    width: 52%;
+}
+.footer_line {
+    width: 72vw; 
+}
+}
+@media(max-width:768px) {
+    .company_pmark {
+        width: 70%;
+    }
+    .footer_line {
+        width: 80vw;
+    }
+    .footer_navlist {
+        padding: 0;
+    }
+    .footer_menu_listitem {
+        margin-right: 2vw;
+    }
+    }
+@media(max-width:568px) {
+    .company_pmark {
+        width: 90%;
+    }
+    .ft_logo{
+        width: 24vw;
+    }
+    .ft_company h3 {
+        font-size: 16px;
+    }
+    .company_pmark img {
+        margin-right: 20px;
+    }
+    .footer_navlist{
+        display: none;
+    }
+    .footer_line {
+        width: 80vw;
+    }
+}

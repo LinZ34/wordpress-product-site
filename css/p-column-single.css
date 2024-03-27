@@ -1,0 +1,213 @@
+.title {
+    position: absolute;
+    top: 12vw;
+    left: 10vw;
+  }
+.titlesm span{
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: #2E2E2E 1.5px solid;
+    font-weight: bold;
+  }
+.titlebg-sg{
+    font-size: 32px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-top: 10px;
+}
+.column-sg{
+    margin: 60px 12vw;
+}
+.tbtitle{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #0087CE;
+    color: white;
+    border-radius: 20px;
+    display: block; 
+    margin: 30px auto;
+    width: 100px;
+}
+.contentstb{
+    padding: 10px 40px;
+    background-color: #F7F7F7;
+    list-style: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.contentstb li{
+    font-size: 16px;
+    position: relative;
+    padding: 20px 0 20px 24px;
+}
+.contentstb li:not(:last-child){
+    border-bottom: dashed 1px #c8c8c8
+}
+.contentstb li::before{
+    position: absolute;
+    top: 0;
+    left: 2px;
+    bottom: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 24px 0;
+    content: "";
+    background-image: url(../images/pages/columntb.svg);
+    background-size: auto;
+    transition: all 0.3s;
+}
+.clm-content p{
+    font-family:  '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
+    font-size: 16px;
+    color: #2E2E2E;
+    margin-bottom: 30px;
+}
+.sgcolumns{
+    list-style: none;
+    padding: 10px 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+    grid-gap: 20px;
+}
+.othtitle{
+    text-align: center;
+    color: #0087CE;
+    font-size: 20px;
+    font-weight: bold;
+}
+.onecolumn{
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    margin: 10px 10px 0px;
+    padding: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.acolumn{
+    height: 100%;
+}
+.clmnpic img{
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-bottom: 15px;
+    max-width: 100%; 
+    border-radius: 10px;
+}
+.clmtitle{
+    font-size: 20px;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+.clmdate{
+    font-size: 14px;
+    color: #969696;
+    margin: 10px 0;
+}
+.clmctg{
+    background-color: #c2e7fa;
+    width: fit-content;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #2e2e2e;
+}
+.clmcentent{
+    border-top: 1px solid #d7d7d7;
+    color: #2e2e2e;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.othtitle{
+    margin: 60px 0 40px;
+}
+.wp-block-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0087CE;
+    padding: 20px 36px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.wp-block-heading::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #0087CE;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 24px;
+    border-radius: 0 80px 80px 0;
+}
+.wp-block-image img{
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+@media(max-width:1080px) {
+    .title {
+      top: 10vw;
+      left: 6vw;
+    }
+    .titlebg-sg {
+        font-size: 28px;
+    }
+}
+@media(max-width:920px) {
+    .title {
+      top: 8vw;
+    }
+    .header_items.expanded {
+        background-color: #f7f7f7;
+    }
+}
+@media(max-width:768px) {
+    .titlesm span{
+        display: none;
+      }
+    .title {
+    text-align: center;
+    left: auto; 
+    top: auto; 
+    margin: 0 20px;
+    }
+    .titlebg-sg {
+        font-size: 4vw;
+    }
+    .keyvisual {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        position: relative;
+      }    
+    .column-sg {
+        margin: 60px 6vw;
+    }
+}
+@media(max-width:568px) {
+    .column-sg {
+        margin: 60px 4vw;
+    }
+    .contentstb li {
+        font-size: 15px;
+    }
+    .clm-content p {
+        font-size: 15px;
+    }
+    .wp-block-heading {
+        font-size: 18px;
+        padding: 15px 26px;
+    }
+    .wp-block-heading::before {
+        width: 13px;
+        height: 13px;
+        top: 20px;
+    }
+}
